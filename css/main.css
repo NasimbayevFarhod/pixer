@@ -27,10 +27,18 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
 }
 
 body
 {
+  width: 100%;
+  background-color: var(--white-color);
   margin: 0;
   font-family: 'Open Sans';
   font-weight: 400;
@@ -45,6 +53,9 @@ body
 
 .sayt-hider
 {
+  background-color: var(--white-color);
+  position: fixed;
+  width: 100%;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,6 +81,15 @@ body
   display: flex;
   list-style: none;
 }
+.link
+{
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .sayt-liet-item-link {
   margin: 0;
   padding: 16px;
@@ -85,15 +105,6 @@ body
   background-color: var(--gray-color);
 }
 
-
-.link
-{
-  display: block;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-}
 .link-num{
   padding: 5px 13px;
   margin-left: 1px ;
@@ -115,7 +126,7 @@ body
 }
 
 .hero-box {
-  padding: 80px 0;
+  padding:136px 0 80px 0;
   display: flex;
 }
 .hero-info {
@@ -387,8 +398,7 @@ footer .text{
   font-size: 20px;
   line-height: 130%;
 }
-.text {
-}
+
 .footer-text {
   width: 320px;
   
@@ -402,7 +412,7 @@ footer .text{
   display: flex;
 }
 
-.footerlink::before
+.footer-mes .footerlink::before
 {
   width: 22px;
   height: 24px;
@@ -410,7 +420,7 @@ footer .text{
   content: " ";
 }
 
-.footerlink-mes:nth-child(1)::before
+.footerlink-mes::before
 {
   background-image: url(../images/telegramtelegram.svg);
 }
@@ -426,17 +436,136 @@ footer .text{
   color: var(--bloe-color);
 }
 .footerlink:active{
-
   opacity: 0.6;
 }
 
 
+/* services page */
 
 
+.sp-nav-services
+{
+  padding-bottom: 13px;
+  padding-left: 0;
+  border-bottom: 3px solid #191919  ;
+}
 
 
+.sp-hero
+{
+  padding: 128px 0 72px ;
+}
+
+.sp-hero-title
+{
+
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.sp-hero-text
+{
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.sp-second
+{
+  padding: 80px 0;
+  background-color: #F4F4F4;
+}
+
+.sp-second-list
+{
+  margin: 0 auto;
+}
+
+.sp-second-list-item
+{
+  display: flex;
+  margin: 0 auto;
+  padding: 32px;
+  width: 804px;
+  background: var(--white-color);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+
+}
+
+.sp-second-list-item:not(:last-child)
+{
+  margin-bottom: 64px;
+}
+
+.sp-second-info
+{
+  width: 500px;
+}
+
+.sp-second-list-item::before
+{
+  margin-right: auto;
+  content:" ";
+  width: 200px;
+  height: 130px;
+  background-image: url(../images/website-illustrationsayt-made.svg);
+  background-repeat: no-repeat;
+  display:block;
+ background-position: top center;
+}
+.sp-second-list-item:nth-child(2)::before
+{
+  background-image: url(../images/bot-illustrationtelegtam.svg);
+}
+.sp-second-list-item:nth-child(3)::before
+{
+  background-image: url(../images/smm-illustrationsmm.svg);
+}
+.sp-second-list-item:nth-child(4)::before
+{
+  background-image: url(../images/design-illustrationgraphik-design.svg);
+}
+.sp-second-list-item:nth-child(5)::before
+{
+  background-image: url(../images/crm-illustrationcrm.svg);
+}
+
+.sp-second-title
+{
+  margin-bottom: 16px;
+}
+
+.sp-second-info-list
+{
+  margin-top:16px;
+}
+
+.sp-sekond-info-item
+{
+  display: flex;
+  align-items: center;
+}
+
+.sp-sekond-info-item:not(:last-child)
+{
+  margin-bottom: 8px;
+}
 
 
+.sp-sekond-info-item::before
+{
+  content: "";
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  background: #00BAFC;
+  border-radius: 12px;
+}
 
 
 
